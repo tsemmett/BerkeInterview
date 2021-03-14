@@ -5,8 +5,9 @@ An example API for managing a collection of games, as requested by Berke during 
 The project itself is running at:
 
 Endpoints defined:
-/auth - takes a username/password (via POST) and returns a JWT token if valid.
-/games - takes a game object (via POST) and adds it to the system, if the user has admin rights (using the token issued from /auth)
+
+ - /auth - takes a username/password (via POST) and returns a JWT token if valid.
+ - /games - takes a game object (via POST) and adds it to the system, if the user has admin rights (using the token issued from /auth)
 
 When passing a game object to the API (POSTing via the /games endpoint), the game ought to look something like:
 {
@@ -28,9 +29,9 @@ When passing a game object to the API (POSTing via the /games endpoint), the gam
 
 }
 
-/collection - (GET) returns the game list for the user asscoiated with the token provided by /auth
-/collection/{gameId} - (POST) Adds a game to the user's list by the game ID
-/collection/{gameId} - (DELETE) Removes a game from the user's list by game ID
+ - /collection - (GET) returns the game list for the user asscoiated with the token provided by /auth
+ - /collection/{gameId} - (POST) Adds a game to the user's list by the game ID
+ - /collection/{gameId} - (DELETE) Removes a game from the user's list by game ID
 
 Due to time constraints, and not being a project requirement, it's not possible to get/add genres or publishers, or get a full game list. 
 By default, gameIds 1-10 are valid, in additon to anything added (adding a game will return the game ID).
