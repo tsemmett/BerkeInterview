@@ -12,6 +12,7 @@ Endpoints defined:
  - /games - takes a game object (via POST) and adds it to the system, if the user has admin rights (using the token issued from /auth)
 
 When passing a game object to the API (POSTing via the /games endpoint), the game ought to look something like:
+
 {
     "Name":"Fallout 4",
     "Overview": "War... War never changes.",
