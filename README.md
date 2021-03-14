@@ -32,9 +32,11 @@ When passing a game object to the API (POSTing via the /games endpoint), the gam
 /collection/{gameId} - (POST) Adds a game to the user's list by the game ID
 /collection/{gameId} - (DELETE) Removes a game from the user's list by game ID
 
-Due to time constraints, and not being a project requirement, it's not possible to get/add genres or publishers, or get a full game list. By default, gameIds 1-10 are valid, in additon to anything added (adding a game will return the game ID).
+Due to time constraints, and not being a project requirement, it's not possible to get/add genres or publishers, or get a full game list. 
+By default, gameIds 1-10 are valid, in additon to anything added (adding a game will return the game ID).
 
 Currently, the following Genres are valid:
+
                     Id = 1, Name = "Strategy"
                     Id = 2, Name = "Roleplaying"
                     Id = 3, Name = "First Person Shooter"
@@ -44,6 +46,7 @@ Currently, the following Genres are valid:
                     Id = 7, Name = "Adventure"
                     
 And the following publishers are valid:
+
                     Id = 1, Name = "Nintendo"
                     Id = 2, Name = "Maxis"
                     Id = 3, Name = "iD Software"
