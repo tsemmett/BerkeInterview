@@ -4,6 +4,8 @@ Interview project for Berke
 An example API for managing a collection of games, as requested by Berke during their interview process.
 The project itself is running at:
 
+https://berkeinterview.azurewebsites.net/
+
 Endpoints defined:
 
  - /auth - takes a username/password (via POST) and returns a JWT token if valid.
